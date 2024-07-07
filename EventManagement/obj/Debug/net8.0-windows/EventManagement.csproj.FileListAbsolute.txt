@@ -1,0 +1,17 @@
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.deps.json
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.dll
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.pdb
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.csproj.AssemblyReference.cache
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.Form1.resources
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.csproj.GenerateResource.cache
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.AssemblyInfoInputs.cache
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.AssemblyInfo.cs
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.csproj.CoreCompileInputs.cache
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.dll
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\refint\EventManagement.dll
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.pdb
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\ref\EventManagement.dll
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.LoginForm.resources
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.HomeForm.resources
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.CreateNewEvent.resources
