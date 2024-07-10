@@ -15,3 +15,7 @@ D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows
 D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.LoginForm.resources
 D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.HomeForm.resources
 D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.CreateNewEvent.resources
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.sourcelink.json
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.Forms.MyEventForm.resources
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.Forms.InviteMeListForm.resources
+D:\Chuan\Project\Csharp\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.Forms.RequestMeListForm.resources

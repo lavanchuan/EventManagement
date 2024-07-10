@@ -57,7 +57,7 @@
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Tên đăng nhập";
             txtUsername.Size = new Size(214, 29);
-            txtUsername.TabIndex = 1;
+            txtUsername.TabIndex = 0;
             txtUsername.Tag = "";
             // 
             // lbPassword
@@ -67,7 +67,7 @@
             lbPassword.Location = new Point(80, 113);
             lbPassword.Name = "lbPassword";
             lbPassword.Size = new Size(95, 25);
-            lbPassword.TabIndex = 0;
+            lbPassword.TabIndex = 1;
             lbPassword.Text = "Mật khẩu:";
             // 
             // txtPassword
@@ -87,7 +87,7 @@
             btnLogin.Location = new Point(80, 242);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(167, 44);
-            btnLogin.TabIndex = 2;
+            btnLogin.TabIndex = 3;
             btnLogin.Text = "Đăng nhập";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
@@ -98,7 +98,7 @@
             btnRegister.Location = new Point(278, 242);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(167, 44);
-            btnRegister.TabIndex = 2;
+            btnRegister.TabIndex = 4;
             btnRegister.Text = "Đăng ký";
             btnRegister.UseVisualStyleBackColor = true;
             btnRegister.Click += btnRegister_Click;
@@ -110,7 +110,7 @@
             lbName.Location = new Point(80, 164);
             lbName.Name = "lbName";
             lbName.Size = new Size(45, 25);
-            lbName.TabIndex = 0;
+            lbName.TabIndex = 2;
             lbName.Text = "Tên:";
             // 
             // txtName
@@ -120,7 +120,7 @@
             txtName.Name = "txtName";
             txtName.PlaceholderText = "Tên của bạn";
             txtName.Size = new Size(214, 29);
-            txtName.TabIndex = 1;
+            txtName.TabIndex = 2;
             txtName.Tag = "";
             // 
             // LoginForm

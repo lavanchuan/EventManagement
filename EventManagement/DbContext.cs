@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 using MySql.Data.MySqlClient;
 using System.Data;
+using EventManagement.Services;
 
 namespace EventManagement
 {
-    internal class DbContext
+    public class DbContext
     {
         private DataService dataService;
 
@@ -19,6 +20,7 @@ namespace EventManagement
         public List<InviteDTO> invites { get; set; }
         public List<RequestDTO> requests { get; set; }
         public List<AccountEventDTO> accountEvents { get; set; }
+        public List<MemberDTO> members { get; set; }
 
         public DbContext()
         {
@@ -34,9 +36,10 @@ namespace EventManagement
             loadInvites();
             loadRequests();
             loadAccountEvents();
+            loadMembers();
         }
 
-        private void loadAccounts() {
+        public void loadAccounts() {
             accounts = new List<AccountDTO>();
             
             string query = "select id, name, username, password from account";
@@ -53,7 +56,7 @@ namespace EventManagement
             }
             
         }
-        private void loadEvents() {
+        public void loadEvents() {
             events = new List<EventDTO>();
 
             string query = "select id, name, time, address, description from event";
@@ -74,8 +77,9 @@ namespace EventManagement
                     ));
             }
 
+
         }
-        private void loadInvites() {
+        public void loadInvites() {
             invites = new List<InviteDTO>();
 
             string query = "select id, createAt, state, eventId, ownerId, userId from invite";
@@ -87,8 +91,10 @@ namespace EventManagement
                 string dataItem = line.Trim();
                 if (dataItem.Equals("")) continue;
                 items = dataItem.Split("\t");
+
                 ActionState state = Int32.Parse(items[2]) == 0 ? ActionState.Sent :
                      Int32.Parse(items[2]) == 1 ? ActionState.Accept : ActionState.Reject;
+
                 invites.Add(new InviteDTO(Int32.Parse(items[0]),
                     FormatService.StringToDataTime(items[1], true),
                     state,
@@ -96,10 +102,13 @@ namespace EventManagement
                     Int32.Parse(items[4]),
                     Int32.Parse(items[5])
                     ));
+                InviteDTO ivt = invites[invites.Count - 1];
             }
 
+            //Console.WriteLine("Invite.Count: " + invites.Count);
+
         }
-        private void loadRequests() {
+        public void loadRequests() {
             requests = new List<RequestDTO>();
 
             string query = "select id, createAt, state, eventId, ownerId, userId from request";
@@ -123,7 +132,7 @@ namespace EventManagement
             }
         }
 
-        private void loadAccountEvents() {
+        public void loadAccountEvents() {
             accountEvents = new List<AccountEventDTO>();
 
             string query = "select id, ownerId, eventId from account_event";
@@ -139,6 +148,26 @@ namespace EventManagement
                 accountEvents.Add(new AccountEventDTO(Int32.Parse(items[0]),
                     Int32.Parse(items[1]), Int32.Parse(items[2])));
             }
+        }
+
+        public void loadMembers() {
+            members = new List<MemberDTO>();
+
+            string query = "select id, eventId, memberId from member";
+            string data = dataService.GetDataLine(dataService.GetDataTable(query));
+            string[] lines = data.Split("\n");
+            string[] items;
+            foreach (string line in lines)
+            {
+                string dataItem = line.Trim();
+                if (dataItem.Equals("")) continue;
+                items = dataItem.Split("\t");
+
+                members.Add(new MemberDTO(Int32.Parse(items[0]),
+                    Int32.Parse(items[1]), Int32.Parse(items[2])));
+            }
+
+            //Console.WriteLine("Member size: " + members.Count);
         }
 
         // 

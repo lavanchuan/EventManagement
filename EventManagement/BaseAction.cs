@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EventManagement
 {
-    internal class BaseAction : BaseEntity
+    public class BaseAction : BaseEntity
     {
         public DateTime createAt {get; set;}
         public ActionState state { get; set;}

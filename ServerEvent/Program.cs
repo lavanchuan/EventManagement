@@ -1,4 +1,5 @@
 using EventManagement;
+using EventManagement.Forms;
 
 namespace ServerEvent
 {
@@ -20,6 +21,7 @@ namespace ServerEvent
 
             ApplicationConfiguration.Initialize();
             Application.Run(new formServer());
+            //Application.Run(new InviteMeListForm());
         }
     }
 }

@@ -16,6 +16,8 @@ namespace ClientEvent
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new EventManagement.LoginForm());
+            //Application.Run(new EventManagement.Forms.MyEventForm());
+            //Application.Run(new EventManagement.HomeForm());
         }
     }
 }

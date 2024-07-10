@@ -7,6 +7,15 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\InviteMeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MyEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RequestMeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -25,5 +25,9 @@ namespace EventManagement
         public ActionState state { get; set; }
         public int requestId { get; set; }
         public int inviteId { get; set; }
+
+        public int memberId { get; set; }
+
+
     }
 }

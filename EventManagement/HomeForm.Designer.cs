@@ -38,6 +38,7 @@
             txtIdEvent = new TextBox();
             btnRequestEvent = new Button();
             label1 = new Label();
+            btnMyEventList = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,10 +54,10 @@
             // 
             // btnAddEvent
             // 
-            btnAddEvent.Font = new Font("Segoe UI", 12F);
-            btnAddEvent.Location = new Point(12, 196);
+            btnAddEvent.Font = new Font("Segoe UI", 9.75F);
+            btnAddEvent.Location = new Point(12, 246);
             btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.Size = new Size(206, 59);
+            btnAddEvent.Size = new Size(206, 50);
             btnAddEvent.TabIndex = 1;
             btnAddEvent.Text = "Thêm sự kiện mới";
             btnAddEvent.UseVisualStyleBackColor = true;
@@ -64,23 +65,25 @@
             // 
             // btnIviteList
             // 
-            btnIviteList.Font = new Font("Segoe UI", 12F);
-            btnIviteList.Location = new Point(12, 275);
+            btnIviteList.Font = new Font("Segoe UI", 9.75F);
+            btnIviteList.Location = new Point(12, 301);
             btnIviteList.Name = "btnIviteList";
-            btnIviteList.Size = new Size(206, 59);
+            btnIviteList.Size = new Size(206, 50);
             btnIviteList.TabIndex = 1;
             btnIviteList.Text = "Danh sách lời mời";
             btnIviteList.UseVisualStyleBackColor = true;
+            btnIviteList.Click += btnIviteList_Click;
             // 
             // btnRequestList
             // 
-            btnRequestList.Font = new Font("Segoe UI", 12F);
-            btnRequestList.Location = new Point(12, 348);
+            btnRequestList.Font = new Font("Segoe UI", 9.75F);
+            btnRequestList.Location = new Point(12, 357);
             btnRequestList.Name = "btnRequestList";
-            btnRequestList.Size = new Size(206, 59);
+            btnRequestList.Size = new Size(206, 50);
             btnRequestList.TabIndex = 1;
-            btnRequestList.Text = "Danh sách yêu cầu tham gia sự kiện";
+            btnRequestList.Text = "Danh sách yêu cầu tham";
             btnRequestList.UseVisualStyleBackColor = true;
+            btnRequestList.Click += btnRequestList_Click;
             // 
             // v_events
             // 
@@ -142,6 +145,17 @@
             label1.Text = "Id sự kiện";
             label1.Click += label1_Click;
             // 
+            // btnMyEventList
+            // 
+            btnMyEventList.Font = new Font("Segoe UI", 9.75F);
+            btnMyEventList.Location = new Point(12, 186);
+            btnMyEventList.Name = "btnMyEventList";
+            btnMyEventList.Size = new Size(206, 50);
+            btnMyEventList.TabIndex = 1;
+            btnMyEventList.Text = "Sự kiện của tôi";
+            btnMyEventList.UseVisualStyleBackColor = true;
+            btnMyEventList.Click += myEventList;
+            // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -151,6 +165,7 @@
             Controls.Add(v_events);
             Controls.Add(btnRequestList);
             Controls.Add(btnIviteList);
+            Controls.Add(btnMyEventList);
             Controls.Add(btnAddEvent);
             Controls.Add(lbEventList);
             Controls.Add(lbName);
@@ -174,5 +189,6 @@
         private Button btnRequestEvent;
         private Label label1;
         private TextBox txtIdEvent;
+        private Button btnMyEventList;
     }
 }

@@ -29,3 +29,4 @@ D:\Chuan\Project\Csharp\EventManagement\ClientEvent\bin\Debug\net8.0-windows\Eve
 D:\Chuan\Project\Csharp\EventManagement\ClientEvent\bin\Debug\net8.0-windows\EventManagement.pdb
 D:\Chuan\Project\Csharp\EventManagement\ClientEvent\obj\Debug\net8.0-windows\ClientEvent.csproj.AssemblyReference.cache
 D:\Chuan\Project\Csharp\EventManagement\ClientEvent\obj\Debug\net8.0-windows\ClientEv.CC28ECD3.Up2Date
+D:\Chuan\Project\Csharp\EventManagement\ClientEvent\obj\Debug\net8.0-windows\ClientEvent.sourcelink.json

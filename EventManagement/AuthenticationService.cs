@@ -50,5 +50,13 @@ namespace EventManagement
 
             return "";
         }
+
+        public bool ExistsById(int accountId) {
+            dbContext.loadAccounts();
+            foreach (AccountDTO acc in dbContext.accounts) { 
+                if(acc.id == accountId) return true;
+            }
+            return false;
+        }
     }
 }

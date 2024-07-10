@@ -10,7 +10,7 @@ namespace EventManagement
 {
     internal class AccountService : DataService
     {
-        public AccountService() : base() { }
+        DbContext dbContext = new DbContext();
 
         public void AddAccount(RequestData request) {
             string query = "insert into account(name, username, password) " +
@@ -36,6 +36,16 @@ namespace EventManagement
                     connection.Close();
                 }
             }
+        }
+
+        public AccountDTO GetById(int accountId) {
+            dbContext.loadAccounts();
+
+            foreach (AccountDTO acc in dbContext.accounts) {
+                if (acc.id == acc.id) return acc;
+            }
+
+            return null;
         }
 
     }

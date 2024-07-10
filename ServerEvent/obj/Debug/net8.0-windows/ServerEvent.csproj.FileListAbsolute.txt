@@ -31,3 +31,4 @@ D:\Chuan\Project\Csharp\EventManagement\ServerEvent\bin\Debug\net8.0-windows\Eve
 D:\Chuan\Project\Csharp\EventManagement\ServerEvent\bin\Debug\net8.0-windows\EventManagement.pdb
 D:\Chuan\Project\Csharp\EventManagement\ServerEvent\obj\Debug\net8.0-windows\ServerEvent.csproj.AssemblyReference.cache
 D:\Chuan\Project\Csharp\EventManagement\ServerEvent\obj\Debug\net8.0-windows\ServerEv.847515BE.Up2Date
+D:\Chuan\Project\Csharp\EventManagement\ServerEvent\obj\Debug\net8.0-windows\ServerEvent.sourcelink.json

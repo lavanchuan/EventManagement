@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EventManagement
 {
-    internal class AccountEventDTO : BaseEntity
+    public class AccountEventDTO : BaseEntity
     {
         public int ownerId { get; set; }
         public int eventId { get; set; }
