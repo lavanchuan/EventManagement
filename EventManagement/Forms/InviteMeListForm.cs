@@ -64,7 +64,7 @@ namespace EventManagement.Forms
                     request.userId = userId;
                     request.eventId = item.eventId;
 
-                    Console.WriteLine($"REQUEST: {request.eventId}\t{request.ownerId}\t{request.userId}");
+                    Console.WriteLine($"[Accept] request: {request.eventId}\t{request.ownerId}\t{request.userId}");
 
                     int result = socketService.SendAcceptInvite(request, serverEndpoint);
                     if (result == 0)
@@ -137,10 +137,10 @@ namespace EventManagement.Forms
                     response.result.Equals(SocketService.TRUE))
                     {
 
-                        MessageBox.Show("Chấp nhận thành công.");
+                        MessageBox.Show("Từ chối thành công.");
                         return;
                     }
-                    else MessageBox.Show("Chấp nhận thất bại !!!");
+                    else MessageBox.Show("Từ chối thất bại !!!");
                 });
 
                 rejectInviteThread.Start();

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Sockets;
 using System.Net;
+using EventManagement.Responses;
 
 namespace EventManagement
 {
@@ -157,11 +158,14 @@ namespace EventManagement
                 }
 
                 string msg = Encoding.UTF8.GetString(buffer, 0, result);
-                if (msg.Contains(SocketService.REGISTER_RESPONSE) && msg.Split("\t")[1] == "TRUE")
-                {
-                    MessageBox.Show("Đăng ký thành công");
-                    int id = Int32.Parse(msg.Split("\t")[2]);
-                    NavigateHomeForm(id, txtName.Text);
+                ServerResponse response = new ServerResponse(msg);
+                if (response.type.Equals(SocketService.REGISTER_RESPONSE) &&
+                    response.result.Equals(SocketService.TRUE)) {
+
+                    string name = response.msg.Split(SocketService.PATTERN_ITEM)[0];
+                    int accountId = Int32.Parse(response.msg.Trim().Split(SocketService.PATTERN_ITEM)[1].Trim());
+
+                    NavigateHomeForm(accountId, name);
                 }
                 else
                 {

@@ -28,18 +28,22 @@ namespace ServerEvent
         InviteService inviteService = new InviteService();
         public formServer()
         {
-            Console.WriteLine("TestCase: FORM 1");
             InitializeComponent();
 
-            Console.WriteLine("TestCase: FORM 2");
             client = new IPEndPoint(IPAddress.Any, 0);
             clientRemote = (EndPoint)client;
+        }
+
+        private void AddLineViewConsole(string msg)
+        {
+            vConsole.Items.Add(msg);
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             running = true;
             Console.WriteLine("Server running...");
+            AddLineViewConsole("Máy ch? ?ang ch?y...");
 
             IPAddress ipAddress = IPAddress.Parse(AppData.SERVER_HOST);
             IPEndPoint endPoint = new IPEndPoint(ipAddress, AppData.PORT);
@@ -58,11 +62,14 @@ namespace ServerEvent
         {
             running = false;
             Console.WriteLine("Server stopping...");
+            AddLineViewConsole("Máy ch? ?ang t?t...");
 
             if (server != null)
             {
                 server.Close();
                 Console.WriteLine("Server stopped");
+                AddLineViewConsole("Máy ch? ?ã t?t");
+
             }
         }
 
@@ -96,7 +103,15 @@ namespace ServerEvent
                     Console.WriteLine("=========================================");
                     Console.WriteLine("MESSAGE: " + message);
 
+                    IPEndPoint svIP = (IPEndPoint)clientRemote;
+                    AddLineViewConsole($"Tin nh?n nh?n ???c:\n");
+                    AddLineViewConsole($"Host client: {svIP.Address.ToString()}");
+                    AddLineViewConsole($"Ip Address: {svIP.Address}");
+                    AddLineViewConsole($"Port: {svIP.Port}");
+
                     type = message.Split("\t")[0];
+                    AddLineViewConsole($"Yêu c?u: {type}");
+
 
                     RequestData request = new RequestData();
                     switch (type)
@@ -123,34 +138,50 @@ namespace ServerEvent
                             if (result > 0)
                             {
                                 Console.WriteLine("Successfully send login response for client");
+                                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
+
                             }
                             else
                             {
                                 Console.WriteLine("Failed send login response for client");
+                                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
                             }
 
                             break;
                         case "REGISTER":
 
-                            RequestData registerRequestData = new RequestData();
-                            registerRequestData.name = message.Split("\t")[1].Split(SocketService.PATTERN_ITEM)[0];
-                            registerRequestData.username = message.Split("\t")[1].Split(SocketService.PATTERN_ITEM)[1];
-                            registerRequestData.password = message.Split("\t")[1].Split(SocketService.PATTERN_ITEM)[2];
+                            request = new RequestData();
+                            request.username = message.Split(SocketService.PATTERN)[1]
+                                .Split(SocketService.PATTERN_ITEM)[1];
+                            request.password = message.Split(SocketService.PATTERN)[1]
+                                .Split(SocketService.PATTERN_ITEM)[2];
+                            request.name = message.Split(SocketService.PATTERN)[1]
+                                .Split(SocketService.PATTERN_ITEM)[0];
 
-                            response = authenticationService.Register(registerRequestData) ? "TRUE" : "FALSE";
-                            if (response.Equals("TRUE")) accountId = authenticationService.GetIdByUsername(registerRequestData.username);
-                            message = SocketService.REGISTER_RESPONSE +
-                                SocketService.PATTERN + response +
-                                SocketService.PATTERN + accountId;
+                            response = authenticationService.Register(request) ? SocketService.TRUE : SocketService.FALSE;
+                            message = SocketService.REGISTER_RESPONSE + SocketService.PATTERN;
+                            message += response;
+
+                            if (response.Equals(SocketService.TRUE))
+                            {
+                                request.userId = (new AccountService()).GetMaxAccountId();
+
+                                message += SocketService.PATTERN;
+                                message += request.name + SocketService.PATTERN_ITEM;
+                                message += request.userId;
+                            }
+
                             bufferSend = Encoding.UTF8.GetBytes(message);
                             result = server.SendTo(bufferSend, message.Length, 0, clientRemote);
                             if (result > 0)
                             {
                                 Console.WriteLine("Successfully send register response for client");
+                                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
                             }
                             else
                             {
                                 Console.WriteLine("Failed send register response for client");
+                                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
                             }
 
                             break;
@@ -177,10 +208,12 @@ namespace ServerEvent
                             if (result > 0)
                             {
                                 Console.WriteLine("Successfully send create event response for client");
+                                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
                             }
                             else
                             {
                                 Console.WriteLine("Failed send create event response for client");
+                                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
                             }
 
                             break;
@@ -215,10 +248,12 @@ namespace ServerEvent
                             if (result > 0)
                             {
                                 Console.WriteLine("Successfully send request event response for client");
+                                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
                             }
                             else
                             {
                                 Console.WriteLine("Failed send create request response for client");
+                                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
                             }
 
                             break;
@@ -241,6 +276,8 @@ namespace ServerEvent
 
                         case "GET_INVITE_ME_LIST":
                             userId = Int32.Parse(message.Split(SocketService.PATTERN)[1].Trim());
+
+                            Console.WriteLine($"[GET_INVITE_ME_LIST] userId({userId})");
 
                             Thread getInviteMeList = new Thread(() => ThreadGetInviteMeList(userId));
                             getInviteMeList.Start();
@@ -288,6 +325,10 @@ namespace ServerEvent
                                 .Split(SocketService.PATTERN_ITEM)[1].Trim());
                             userId = Int32.Parse(message.Split(SocketService.PATTERN)[1].Trim()
                                 .Split(SocketService.PATTERN_ITEM)[2].Trim());
+
+                            Console.WriteLine($"[ACCEPT_INVITE] request eventId({eventId})\t" +
+                                $"ownerId({ownerId})\t" +
+                                $"userId({userId})");
 
                             Thread acceptInviteThread = new Thread(() => ThreadAcceptInvite(eventId, ownerId, userId));
                             acceptInviteThread.Start();
@@ -350,10 +391,12 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send reject request for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send reject request for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
 
@@ -392,10 +435,12 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send accept request for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send accept request for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
 
@@ -406,6 +451,7 @@ namespace ServerEvent
             if (!authenticationService.ExistsById(userId) || !authenticationService.ExistsById(ownerId) ||
                 !eventService.ExistsById(eventId))
             {
+                Console.WriteLine($"[Accept_Invite] NOT_FOUND");
                 response += SocketService.FALSE + SocketService.PATTERN;
                 response += SocketService.NOT_FOUND;
             }
@@ -417,6 +463,11 @@ namespace ServerEvent
                 request.userId = userId;
                 request.state = ActionState.Accept;
 
+                Console.WriteLine($"[Accept_Invite] request eventId({request.eventId})\t" +
+                    $"ownerId({request.ownerId})\t" +
+                    $"userId({request.userId})\t" +
+                    $"state({request.state})");
+
                 inviteService.UpdateInvite(request);
 
                 response += SocketService.TRUE;
@@ -427,13 +478,15 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send accept invite for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send accept invite for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
-        
+
         private void ThreadRejectInvite(int eventId, int ownerId, int userId)
         {
             string response = SocketService.REJECT_INVITE_RESPONSE + SocketService.PATTERN;
@@ -462,10 +515,12 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send reject invite for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send reject invite for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
 
@@ -490,10 +545,12 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send request me list for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send request me list for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
 
@@ -518,10 +575,12 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send invite list for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send invite list for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
 
@@ -548,10 +607,12 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send event list for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send event list for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
 
@@ -579,10 +640,12 @@ namespace ServerEvent
             if (result > 0)
             {
                 Console.WriteLine("SERVER: Successfully send event list for client.");
+                AddLineViewConsole($"Ph?n h?i: Thành công.\n");
             }
             else
             {
                 Console.WriteLine("SERVER: Failed send event list for client!!!");
+                AddLineViewConsole($"Ph?n h?i: Th?t b?i.\n");
             }
         }
     }

@@ -20,6 +20,8 @@ namespace EventManagement
             string query = "insert into event(name, time, address, description) " +
                 "value(@name, @time, @address, @description)";
 
+            int result = 0;
+
             using (MySqlCommand cmd = new MySqlCommand(query, connection))
             {
                 cmd.Parameters.AddWithValue("@name", request.name);
@@ -31,7 +33,7 @@ namespace EventManagement
                 {
                     connection.Open();
 
-                    cmd.ExecuteNonQuery();
+                    result = cmd.ExecuteNonQuery();
                 }
                 catch (Exception e)
                 {
@@ -47,6 +49,9 @@ namespace EventManagement
             query = "select max(id) from event";
             string data = GetDataLine(GetDataTable(query));
             int eventId = Int32.Parse(data.Trim());
+
+            Console.WriteLine("Max EventId: " + eventId);
+            Console.WriteLine("OwnerId: " + request.ownerId);
 
             // 
             query = "insert into account_event(eventId, ownerId) value (@eventId, @ownerId)";

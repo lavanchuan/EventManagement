@@ -31,7 +31,7 @@
             lbServer = new Label();
             btnStart = new Button();
             btnStop = new Button();
-            listView1 = new ListView();
+            vConsole = new ListBox();
             SuspendLayout();
             // 
             // lbServer
@@ -66,20 +66,21 @@
             btnStop.UseVisualStyleBackColor = true;
             btnStop.Click += btnStop_Click;
             // 
-            // listView1
+            // vConsole
             // 
-            listView1.Location = new Point(29, 107);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(424, 173);
-            listView1.TabIndex = 3;
-            listView1.UseCompatibleStateImageBehavior = false;
+            vConsole.FormattingEnabled = true;
+            vConsole.ItemHeight = 15;
+            vConsole.Location = new Point(12, 97);
+            vConsole.Name = "vConsole";
+            vConsole.Size = new Size(456, 199);
+            vConsole.TabIndex = 2;
             // 
             // formServer
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(480, 307);
-            Controls.Add(listView1);
+            Controls.Add(vConsole);
             Controls.Add(btnStop);
             Controls.Add(btnStart);
             Controls.Add(lbServer);
@@ -94,6 +95,6 @@
         private Label lbServer;
         private Button btnStart;
         private Button btnStop;
-        private ListView listView1;
+        private ListBox vConsole;
     }
 }

@@ -3,100 +3,16 @@
   "WorkspaceRootPath": "D:\\Chuan\\Project\\Csharp\\EventManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\forms\\invitemelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\forms\\invitemelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA0959E8-BD3C-4890-B31F-A9D71824EA50}|ServerEvent\\ServerEvent.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\serverevent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA0959E8-BD3C-4890-B31F-A9D71824EA50}|ServerEvent\\ServerEvent.csproj|solutionrelative:serverevent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\socketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\socketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\inviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\inviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\forms\\requestmelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\forms\\requestmelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|D:\\Chuan\\Project\\Csharp\\EventManagement\\eventmanagement\\forms\\requestmelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\forms\\requestmelistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|D:\\Chuan\\Project\\Csharp\\EventManagement\\eventmanagement\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\entities\\requestdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\entities\\requestdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\entities\\invitedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\entities\\invitedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\invitedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\invitedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\forms\\requestmelistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\forms\\requestmelistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|D:\\Chuan\\Project\\Csharp\\EventManagement\\eventmanagement\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\baseaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\baseaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|d:\\chuan\\project\\csharp\\eventmanagement\\eventmanagement\\accounteventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E6D1F81-BE82-4240-95B4-BD3136464C57}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\accounteventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,23 +22,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestService.cs",
+              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\RequestService.cs",
+              "RelativeDocumentMoniker": "EventManagement\\RequestService.cs",
+              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\RequestService.cs",
+              "RelativeToolTip": "EventManagement\\RequestService.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAUwGoAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:30:24.288Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SocketService.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\SocketService.cs",
-              "RelativeDocumentMoniker": "EventManagement\\SocketService.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\SocketService.cs",
-              "RelativeToolTip": "EventManagement\\SocketService.cs",
-              "ViewState": "AQIAAJoAAAAAAAAAAAAwwKYAAAAmAAAA",
+              "Title": "RequestMeListForm.cs",
+              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.cs",
+              "RelativeDocumentMoniker": "EventManagement\\Forms\\RequestMeListForm.cs",
+              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.cs",
+              "RelativeToolTip": "EventManagement\\Forms\\RequestMeListForm.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAADwv0AAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T03:40:35.064Z",
+              "WhenOpened": "2024-07-11T10:15:59.683Z",
               "EditorCaption": ""
             },
             {
@@ -133,276 +58,14 @@
               "RelativeDocumentMoniker": "ServerEvent\\Form1.cs",
               "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\ServerEvent\\Form1.cs",
               "RelativeToolTip": "ServerEvent\\Form1.cs",
-              "ViewState": "AQIAAMYAAAAAAAAAAAAwwNYBAAAAAAAA",
+              "ViewState": "AQIAAA8CAAAAAAAAAAAUwBoCAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T11:17:40.203Z",
+              "WhenOpened": "2024-07-11T09:03:44.894Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InviteMeListForm.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\InviteMeListForm.cs",
-              "RelativeDocumentMoniker": "EventManagement\\Forms\\InviteMeListForm.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\InviteMeListForm.cs",
-              "RelativeToolTip": "EventManagement\\Forms\\InviteMeListForm.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAowCcAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:45:59.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InviteService.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\InviteService.cs",
-              "RelativeDocumentMoniker": "EventManagement\\InviteService.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\InviteService.cs",
-              "RelativeToolTip": "EventManagement\\InviteService.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAtwD4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:23:12.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeForm.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\HomeForm.cs",
-              "RelativeDocumentMoniker": "EventManagement\\HomeForm.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\HomeForm.cs",
-              "RelativeToolTip": "EventManagement\\HomeForm.cs",
-              "ViewState": "AQIAANkAAAAAAAAAAIAwwOQAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:43:49.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RequestMeListForm.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.cs",
-              "RelativeDocumentMoniker": "EventManagement\\Forms\\RequestMeListForm.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.cs",
-              "RelativeToolTip": "EventManagement\\Forms\\RequestMeListForm.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAYwF0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T03:09:11.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RequestService.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\RequestService.cs",
-              "RelativeDocumentMoniker": "EventManagement\\RequestService.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\RequestService.cs",
-              "RelativeToolTip": "EventManagement\\RequestService.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAUwEsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:38:16.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RequestMeListForm.cs [Design]",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.cs",
-              "RelativeDocumentMoniker": "EventManagement\\Forms\\RequestMeListForm.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.cs [Design]",
-              "RelativeToolTip": "EventManagement\\Forms\\RequestMeListForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T03:06:32.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MemberService.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Services\\MemberService.cs",
-              "RelativeDocumentMoniker": "EventManagement\\Services\\MemberService.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Services\\MemberService.cs",
-              "RelativeToolTip": "EventManagement\\Services\\MemberService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:14:46.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\LoginForm.cs",
-              "RelativeDocumentMoniker": "EventManagement\\LoginForm.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\LoginForm.cs",
-              "RelativeToolTip": "EventManagement\\LoginForm.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAIwAMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T10:32:56.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\LoginForm.cs",
-              "RelativeDocumentMoniker": "EventManagement\\LoginForm.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\LoginForm.cs [Design]",
-              "RelativeToolTip": "EventManagement\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T10:33:01.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "EventManagement\\LoginForm.Designer.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\LoginForm.Designer.cs",
-              "RelativeToolTip": "EventManagement\\LoginForm.Designer.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAADwv1sAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T10:33:25.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RequestDetail.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Entities\\RequestDetail.cs",
-              "RelativeDocumentMoniker": "EventManagement\\Entities\\RequestDetail.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Entities\\RequestDetail.cs",
-              "RelativeToolTip": "EventManagement\\Entities\\RequestDetail.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAYwD4AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T03:13:25.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InviteDetail.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Entities\\InviteDetail.cs",
-              "RelativeDocumentMoniker": "EventManagement\\Entities\\InviteDetail.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Entities\\InviteDetail.cs",
-              "RelativeToolTip": "EventManagement\\Entities\\InviteDetail.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAcwCUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:42:11.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DbContext.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\DbContext.cs",
-              "RelativeDocumentMoniker": "EventManagement\\DbContext.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\DbContext.cs",
-              "RelativeToolTip": "EventManagement\\DbContext.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAjwGIAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:17:17.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "InviteDTO.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\InviteDTO.cs",
-              "RelativeDocumentMoniker": "EventManagement\\InviteDTO.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\InviteDTO.cs",
-              "RelativeToolTip": "EventManagement\\InviteDTO.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBIAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:17:58.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EventDTO.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\EventDTO.cs",
-              "RelativeDocumentMoniker": "EventManagement\\EventDTO.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\EventDTO.cs",
-              "RelativeToolTip": "EventManagement\\EventDTO.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAmwCgAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T04:16:01.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RequestMeListForm.Designer.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.Designer.cs",
-              "RelativeDocumentMoniker": "EventManagement\\Forms\\RequestMeListForm.Designer.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\Forms\\RequestMeListForm.Designer.cs",
-              "RelativeToolTip": "EventManagement\\Forms\\RequestMeListForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T04:04:42.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\AccountService.cs",
-              "RelativeDocumentMoniker": "EventManagement\\AccountService.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\AccountService.cs",
-              "RelativeToolTip": "EventManagement\\AccountService.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAYwCgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:19:54.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\EventService.cs",
-              "RelativeDocumentMoniker": "EventManagement\\EventService.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\EventService.cs",
-              "RelativeToolTip": "EventManagement\\EventService.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAzwKMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:13:34.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RequestDTO.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\RequestDTO.cs",
-              "RelativeDocumentMoniker": "EventManagement\\RequestDTO.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\RequestDTO.cs",
-              "RelativeToolTip": "EventManagement\\RequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:18:09.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "HomeForm.cs [Design]",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\HomeForm.cs",
-              "RelativeDocumentMoniker": "EventManagement\\HomeForm.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\HomeForm.cs [Design]",
-              "RelativeToolTip": "EventManagement\\HomeForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:54:22.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BaseAction.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\BaseAction.cs",
-              "RelativeDocumentMoniker": "EventManagement\\BaseAction.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\BaseAction.cs",
-              "RelativeToolTip": "EventManagement\\BaseAction.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:18:14.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AccountEventDTO.cs",
-              "DocumentMoniker": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\AccountEventDTO.cs",
-              "RelativeDocumentMoniker": "EventManagement\\AccountEventDTO.cs",
-              "ToolTip": "D:\\Chuan\\Project\\Csharp\\EventManagement\\EventManagement\\AccountEventDTO.cs",
-              "RelativeToolTip": "EventManagement\\AccountEventDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:18:28.697Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

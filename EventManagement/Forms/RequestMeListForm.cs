@@ -43,7 +43,7 @@ namespace EventManagement.Forms
             btnColAccept.UseColumnTextForButtonValue = true;
 
             dgvRequestMeList.Columns.Add(btnColAccept);
-            dgvRequestMeList.CellContentClick += RequestAccept;
+            dgvRequestMeList.CellContentClick += AcceptRequest;
             
             // reject
             DataGridViewButtonColumn btnColReject= new DataGridViewButtonColumn();
@@ -51,10 +51,10 @@ namespace EventManagement.Forms
             btnColReject.UseColumnTextForButtonValue = true;
 
             dgvRequestMeList.Columns.Add(btnColReject);
-            dgvRequestMeList.CellContentClick += RequestReject;
+            dgvRequestMeList.CellContentClick += RejectRequest;
         }
 
-        private void RequestAccept(object sender, DataGridViewCellEventArgs e) {
+        private void AcceptRequest(object sender, DataGridViewCellEventArgs e) {
             if (e.RowIndex >= 0 && e.RowIndex < dataSource.Count &&
                 e.ColumnIndex == 0) { 
                 
@@ -93,7 +93,7 @@ namespace EventManagement.Forms
                 acceptRequestThread.Start();
             }
         }
-        private void RequestReject(object sender, DataGridViewCellEventArgs e) {
+        private void RejectRequest(object sender, DataGridViewCellEventArgs e) {
 
             if (e.RowIndex >= 0 && e.RowIndex < dataSource.Count &&
                 e.ColumnIndex == 1)

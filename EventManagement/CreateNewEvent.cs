@@ -48,6 +48,8 @@ namespace EventManagement
         private void ThreadCreateNewEvent()
         {
 
+            Console.WriteLine("UserId: " + ownerId);
+
             RequestData request = new RequestData();
             request.name = txtEventName.Text;
             request.address = txtAddress.Text;

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EventManagement
 {
-    internal class AccountService : DataService
+    public class AccountService : DataService
     {
         DbContext dbContext = new DbContext();
 
@@ -39,13 +39,25 @@ namespace EventManagement
         }
 
         public AccountDTO GetById(int accountId) {
+
+            Console.WriteLine($"[GetById] accountId({accountId})");
+
             dbContext.loadAccounts();
 
             foreach (AccountDTO acc in dbContext.accounts) {
-                if (acc.id == acc.id) return acc;
+                if (acc.id == accountId) return acc;
             }
 
             return null;
+        }
+
+        public int GetMaxAccountId() {
+            dbContext.loadAccounts();
+            int result = -1;
+            foreach (AccountDTO acc in dbContext.accounts) {
+                result = int.Max(result, acc.id);
+            }
+            return result;
         }
 
     }

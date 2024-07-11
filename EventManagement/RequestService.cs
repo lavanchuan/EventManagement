@@ -103,7 +103,7 @@ namespace EventManagement
             {
                 if (request.ownerId == userId && request.state == ActionState.Sent)
                 {
-                    AccountDTO account = (new AccountService()).GetById(request.ownerId);
+                    AccountDTO account = (new AccountService()).GetById(request.userId);
                     EventDTO e = (new EventService()).GetById(request.eventId);
                     result.Add(new RequestDetail(account.id, account.name,
                         e.id, e.name, e.time, e.address));

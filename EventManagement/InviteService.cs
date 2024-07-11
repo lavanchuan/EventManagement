@@ -47,6 +47,11 @@ namespace EventManagement
 
         public void UpdateInvite(RequestData request)
         {
+            Console.WriteLine($"[UpdateInvite] request eventId({request.eventId})\t" +
+                $"ownerId({request.ownerId})\t" +
+                $"userId({request.userId})\t" +
+                $"state({request.state})");
+
             string query = "update invite set state = @state where eventId = @eventId and " +
                 "ownerId = @ownerId and userId = @userId";
 
@@ -67,10 +72,11 @@ namespace EventManagement
 
                     result = cmd.ExecuteNonQuery();
                     Console.WriteLine($"Result: {result}");
+                    if (result > 0) Console.WriteLine("Update [invite] table success.");
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("ERROR: Update invite table");
+                    Console.WriteLine("ERROR: Update [invite] table");
                 }
                 finally
                 {
@@ -79,7 +85,7 @@ namespace EventManagement
 
                 if(request.state == ActionState.Accept && result > 0)
                 {
-                    Console.WriteLine("Adding member");
+                    Console.WriteLine("Adding [member]");
                     request.memberId = request.userId;
                     (new MemberService()).Add(request);
                 } 
@@ -87,6 +93,9 @@ namespace EventManagement
         }
 
         public List<InviteDetail> GetInviteDetailsMeListByUserId(int userId) {
+
+            Console.WriteLine($"[GetInviteDetailsMeListByUserId] userId({userId})");
+
             List<InviteDetail> result = new List<InviteDetail>();
 
             dbContext.loadInvites();

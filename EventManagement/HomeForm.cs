@@ -88,12 +88,6 @@ namespace EventManagement
         private void ThreadSendRequestEvent()
         {
             int result = 0;
-            IPAddress ipAddress = IPAddress.Parse(AppData.SERVER_HOST);
-            IPEndPoint endPoint = new IPEndPoint(ipAddress, AppData.PORT);
-
-            //Socket client = new Socket(ipAddress.AddressFamily,
-            //    SocketType.Dgram,
-            //    ProtocolType.Udp);
 
             SocketService socketService = new SocketService();
             socketService.socket = client;
@@ -103,11 +97,10 @@ namespace EventManagement
             request.userId = accountId;
             request.createAt = DateTime.Now;
 
-            result = socketService.SendRequestEvent(request, endPoint);
+            result = socketService.SendRequestEvent(request, serverEndPoint);
 
             result = 0;
             byte[] buffer = new byte[1024];
-            EndPoint serverEndPoint = (EndPoint)endPoint;
 
             while (result == 0)
             {
@@ -138,23 +131,15 @@ namespace EventManagement
         private void ThreadGetMyEventList(ref List<EventDTO> events)
         {
             int result;
-            const int BufferSizeRecv = 1000000;
+            const int BufferSizeRecv = 4096;
             byte[] buffer = new byte[BufferSizeRecv];
             string message = "";
             ServerResponse response;
-            IPAddress ipAddress = IPAddress.Parse(AppData.SERVER_HOST);
-            IPEndPoint endPoint = new IPEndPoint(ipAddress, AppData.PORT);
-
-            EndPoint serverEndPoint = (EndPoint)endPoint;
-
-            //Socket client = new Socket(ipAddress.AddressFamily,
-            //    SocketType.Dgram,
-            //    ProtocolType.Udp);
 
             SocketService socketService = new SocketService();
             socketService.socket = client;
             // send
-            result = socketService.SendGetMyEventList(accountId, endPoint);
+            result = socketService.SendGetMyEventList(accountId, serverEndPoint);
             if (result == 0)
             {
                 MessageBox.Show("Thất bại, vui lòng thử lại!!!");
@@ -195,6 +180,7 @@ namespace EventManagement
 
         private void btnAddEvent_Click(object sender, EventArgs e)
         {
+            Console.WriteLine($"HomeForm.accountId = {accountId}");
             CreateNewEvent form = new CreateNewEvent();
             form.ownerId = accountId;
             form.ShowDialog();
